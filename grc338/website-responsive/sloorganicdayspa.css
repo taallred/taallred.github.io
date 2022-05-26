@@ -1,75 +1,93 @@
-<!doctype html>  
-<html>  
-    <head>  
-        <meta charset="UTF-8">  
-        <meta name="viewport" content="width=device-width, initial-scale=1">  
-        <link rel="stylesheet" href="https://use.typekit.net/sloorganicdayspa.css">
-        <link rel="stylesheet" type="text/css" href="sloorganicdayspa.css" />
-        <title>Slo Organic Day Spa</title>  
-    </head>   
-    <body> 
-        <div class="container">
-        <header>
-        <h1><a href="index.html"><img src="sloorganiclogo.png" alt="Slo Organic Day Spa Logo" title="Slo Organic Day Spa Logo"></a></h1>
-        <nav> 
-            <ul>
-               <li><a href="ourstory.html">Our Story</a></li>
-               <li><a href="location.html">Location</a></li>
-               <li><a href="services.html">Services</a></li>
-           </ul>
-       </nav>
-        </header>
-        <main>
-        <h2> Services</h2>
-        <p> We provide a wide variety of treatments including: facials, massages, and other body treatments. </p>
-            <img src="spaitems.jpeg" alt="Spa items" title="Spa Items" /> 
-            <ul>
-                <h3>Massages</h3>
+/*CSS DOCUMENT*/
+html, body, div, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit;}
+img {
+    width: 100%; 
+    display: block;
+}
+header {
+background-color: rgb(240, 240, 240);
+color: rgb(30, 30, 30)
+}
 
-                <li>Classic Sweedish • 60 minutes $85 / 80 minutes $120
-                    <p> With long smooth strokes, kneading, and circular movements we
-                    are able to relax muscles and push out excess lactic acid in the muscles. This massage is very
-                    gentle and relaxing. Recommended for first time massage.</p> 
-                </li>
-                <li>Deep Tissue • 60 minutes $100 / 80 minutes $130
-                    <p>With slower strokes and friction techniques this massage targets the deep layers
-                    of the muscles. This massage is for chronically tight or painful muscles, scar tissue from surgeries
-                    or injury and repetitive strain. It is not uncommon to be sore for a day or two after this massage.</p>
-                </li>
-                <li>Hot Stones • 80 minutes $135
-                    <p>The use of hot smooth basalt stones during this massage allows the belly of the
-                    muscle to relax easier and faster than the traditional Swedish (classic) massage. 
-                    This also allows the therapist to apply deeper pressure if needed. 
-                    Hot stones improve circulation and calms the nervous system.</p>
-                </li>
+div.container {
+	margin: auto;
+	max-width: 70em;}
 
-                <h3>Facials</h3>
+@media only screen and (min-width: 60em){
 
-                <li>Classic Beauty • 60 minutes $85
-                    <p>A complete facial that will restore the look of healthy glowing skin. 
-                       Designed for all skin types, this treatment includes cleansing, exfoliation, extractions, custom mask and hydration.</p>
-                </li>
-                <li>Green Apple Enzyme Peel • 60 minutes $120
-                    <p>Eliminate the appearance of fine lines and wrinkles while firming the skin 
-                    using Juice Beauty’s organic Green Apple Enzyme collection.</p>
-                </li>
-                <li>Deep Breath • 45 minutes $60
-                    <p>Using certified organic skincare, this facial detoxifies and replenishes. 
-                    Perfect for those not a fan of extractions.</p> 
-                </li>
+    figure {
+		padding: 1em 1em 0em;
+	}
+}
 
-                <h3>Body Treamtments</h3>
+nav ul li {
+    display: inline-block;
+    list-style-type: none;
+    font-family: Optima, sans-serif;  
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 1em;
+    font-weight: 500; 
+}
+nav ul li a{
+    color:rgb(30, 30, 30);
+    text-decoration: none;
+}
+nav ul li a:hover {
+    color: rgb(192, 212, 188); 
+}
+body { 
+    background-color: rgb(240, 240, 240);
+    color: rgb(30, 30, 30);
+    font-family: Optima, sans-serif; 
+        font-weight: 400;  
+        font-style: normal;
+}
+  
+h1 {
+    background-color: rgb(240, 240, 240);
+    width:15rem;
+    padding: 1rem, 2rem;
+}
 
-                <li>Organic Body Polish + Hydrating Wrap • 80 minutes $125
-                    <p>This experience begins with dry brushing and continues with a luxurious lavender shea butter body polish. 
-                    Your body is then drenched with organic oils and wrapped in a cocoon to encourage absorption and hydration.</p>
-                </li>
-                <li>Organic Body Polish • 45 minutes $85
-                    <p>This exfoliating treatment combines dry bushing with an organic exfoliant to sluff away dry, dead, skin cells while smoothing and toning the skin.</p>
-                </li>    
-            </ul> 
-        </p>
-        </main>
-     </div>
-    </body>  
-</html>
+h2{
+font-size: 2rem;
+padding: 1rem 0rem;
+
+}
+
+h3{
+font-size: 1.3rem;
+padding: 1rem 1rem 1rem;
+border-top: solid rgb(192, 212, 188) 4px; 
+padding-top: 1em;
+
+}
+p{
+    color: rgb(30, 30, 30);  
+	line-height: 160%; 
+	font-family: Optima, sans-serif;  
+    font-weight: 300;  
+    padding: 0.5rem 0rem;
+    margin-bottom: 1rem;
+}
+ul{
+    margin: 1rem;
+    list-style: none;
+    
+}
+
+ol{
+    margin: 1rem 1rem 3rem;
+
+}
+
+li{
+    margin: 1rem;
+    display: list-item;
+    padding: 0.5rem, 0rem;
+    
+
+}
+            
+/*Please don’t change this CSS stylesheet for the content hierarchy assginment */
