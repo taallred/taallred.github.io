@@ -13,12 +13,6 @@ div.container {
 	margin: auto;
 	max-width: 70em;}
 
-@media only screen and (min-width: 60em){
-
-    figure {
-		padding: 1em 1em 0em;
-	}
-}
 
 nav ul li {
     display: inline-block;
